@@ -1,0 +1,116 @@
+{
+  "mappings": [
+    {
+      "source_key": "totalpcs",
+      "dest_col": "",
+      "enabled": false,
+      "group": "summary",
+      "label": "Total (Tổng số)"
+    },
+    {
+      "source_key": "failpcs",
+      "dest_col": "",
+      "enabled": false,
+      "group": "summary",
+      "label": "NG (Số lỗi)"
+    },
+    {
+      "source_key": "passrate",
+      "dest_col": "",
+      "enabled": false,
+      "group": "summary",
+      "label": "Pass Rate (Tỷ lệ đạt)"
+    },
+    {
+      "source_key": "ntfrate",
+      "dest_col": "",
+      "enabled": false,
+      "group": "summary",
+      "label": "NTF Rate"
+    },
+    {
+      "source_key": "leakagerate",
+      "dest_col": "",
+      "enabled": false,
+      "group": "summary",
+      "label": "Leakage Rate"
+    },
+    {
+      "source_key": "SN",
+      "dest_col": "",
+      "enabled": false,
+      "group": "detail",
+      "label": "SN (Mã sản phẩm)"
+    },
+    {
+      "source_key": "ai_time",
+      "dest_col": "",
+      "enabled": false,
+      "group": "detail",
+      "label": "AI Time (Giờ AI)"
+    },
+    {
+      "source_key": "pic_date_time",
+      "dest_col": "",
+      "enabled": false,
+      "group": "detail",
+      "label": "Pic Time (Giờ chụp)"
+    },
+    {
+      "source_key": "ai_predict",
+      "dest_col": "",
+      "enabled": false,
+      "group": "detail",
+      "label": "AI Result (KQ AI)"
+    },
+    {
+      "source_key": "line",
+      "dest_col": "",
+      "enabled": false,
+      "group": "detail",
+      "label": "Line (Dây chuyền)"
+    },
+    {
+      "source_key": "side",
+      "dest_col": "",
+      "enabled": false,
+      "group": "detail",
+      "label": "Side (Mặt)"
+    },
+    {
+      "source_key": "station",
+      "dest_col": "",
+      "enabled": false,
+      "group": "detail",
+      "label": "Station (Trạm)"
+    },
+    {
+      "source_key": "Report_Error",
+      "dest_col": "",
+      "enabled": false,
+      "group": "detail",
+      "label": "Report Error (Báo lỗi)"
+    },
+    {
+      "source_key": "Report_User",
+      "dest_col": "",
+      "enabled": false,
+      "group": "detail",
+      "label": "Report User (Người BC)"
+    },
+    {
+      "source_key": "pic_url",
+      "dest_col": "",
+      "enabled": false,
+      "group": "detail",
+      "label": "Picture URL (Link ảnh)"
+    }
+  ],
+  "dest_headers": [
+    "Date",
+    "Input",
+    "AI Called Fail",
+    "Same as AI",
+    "AI Misjudged"
+  ]
+}
