@@ -1,4 +1,5 @@
 import httpx, json
+import os
 from bs4 import BeautifulSoup
 
 client = httpx.Client(timeout=30, verify=False)
@@ -6,7 +7,15 @@ r = client.get('http://10.144.38.11:5000/data_query')
 soup = BeautifulSoup(r.text, 'html.parser')
 csrf = soup.find('input', {'name': 'csrf_token'})
 csrf_val = csrf['value'] if csrf else ''
-r2 = client.post('http://10.144.38.11:5000/login', data={'csrf_token': csrf_val, 'username': 'gina_ruan', 'password': '12qazxcvbnm,./'}, follow_redirects=True)
+r2 = client.post(
+    'http://10.144.38.11:5000/login',
+    data={
+        'csrf_token': csrf_val,
+        'username': os.environ["API_USERNAME"],
+        'password': os.environ["API_PASSWORD"]
+    },
+    follow_redirects=True
+)
 print('Login:', r2.status_code)
 
 # Fetch sta5 data
